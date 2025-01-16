@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+.emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.icon {
+    font-size: 4rem;
+}
+
+.emojis {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    grid-template-areas:
+        'smiling_face clinking_beer'
+        'face_with_tears seedling';
+}
+
+.emojis:nth-child(1) {
+    grid-area: smiling_face;
+}
+
+.emojis:nth-child(2) {
+    grid-area: clinking_beer;
+}
+
+.emojis:nth-child(3) {
+    grid-area: face_with_tears;
+}
+
+.emojis:nth-child(4) {
+    grid-area: seedling;
+}
+
+.emoji {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon {
+    order: -1;    
+}
+
+h2 {
+    align-self: stretch;
+}
+
+p {
+    flex-grow: 1.5;
+}
+
+a {
+    align-self: stretch;
+}
